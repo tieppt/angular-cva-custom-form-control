@@ -1,0 +1,29 @@
+:host {
+  display: inline-flex;
+}
+
+.checkbox {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  outline: 0;
+  color: #fff;
+  transition: all .2s ease-in-out;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  cursor: pointer;
+}
+.checkbox.checkbox-checked {
+  background: #4caf50;
+}
+
+.checkbox.checkbox-uncheck {
+  background: #e53935;
+}
+
+.checkbox.disabled {
+  cursor: not-allowed;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'custom-control';
+  active = true;
+  disabled = false;
+  control = new FormControl(false);
+  toggleControlDisable() {
+    if (this.control.disabled) {
+      this.control.enable();
+    } else {
+      this.control.disable();
+    }
+  }
 }

@@ -1,0 +1,7 @@
+<div class="checkbox" tabindex="0" (click)="toggleChecked()" [ngClass]="bindingClasses">
+  <span *ngIf="checked; else uncheck" class="fa fa-check" aria-hidden="true"></span>
+</div>
+
+<ng-template #uncheck>
+  <span class="fa fa-times" aria-hidden="true"></span>
+</ng-template>
